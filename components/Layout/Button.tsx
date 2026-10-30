@@ -4,8 +4,8 @@ interface ButtonProps {
     fullWidth?: boolean;
     large?: boolean;
     onClick: () => void;
-    disabled: boolean;
-    outline: boolean;
+    disabled?: boolean;
+    outline?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
