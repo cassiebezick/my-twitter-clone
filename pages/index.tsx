@@ -1,8 +1,10 @@
+import Header from "@/components/Layout/Header";
+
 
 export default function Home() {
   return (
-    <div>
-      Hello World!
-    </div>
+    <>
+    <Header label="Home" />
+    </>
   );
 }
