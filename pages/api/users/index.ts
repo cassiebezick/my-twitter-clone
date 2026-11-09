@@ -15,6 +15,9 @@ export default async function handler(
             createdAt: 'desc'
         }
       });
+      
+      return res.status(200).json(users);
+      
     } catch (error) {
         console.log(error);
         return res.status(400).end();
