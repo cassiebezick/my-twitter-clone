@@ -17,6 +17,7 @@ export default async function handler(
 
       if (!name || !username) {
         throw new Error('Missing fields');
+      }
 
       const updatedUser = await prisma.user.update({
         where: {
@@ -27,13 +28,11 @@ export default async function handler(
             username,
             bio,
             profileImage,
-            coverImage
-        }
+            coverImage,
+        },
       });
 
       return res.status(200).json(updatedUser);
-
-      }
 
     } catch (error) {
         console.log(error);
