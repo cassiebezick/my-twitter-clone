@@ -56,6 +56,7 @@ const EditModal = () => {
       editModal.onClose();
 
     } catch (error) {
+        console.error('Profile update failed:', error);
         toast.error('Something went wrong');
     } finally {
         setIsLoading(false);
