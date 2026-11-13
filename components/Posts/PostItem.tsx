@@ -126,7 +126,7 @@ const PostItem: React.FC<PostItemProps> = ({ data, userId}) => {
                 ">
                     <LikeIcon size={20} />
                     <p>
-                        {data.comments?.length || 0}
+                        {data.likedIds.length || 0}
                     </p>
                 </div>
             </div>
